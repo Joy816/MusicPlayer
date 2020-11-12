@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--  -->
+    <title>Raaga</title>
+    <link rel="icon" type="image/png" href="images/raaga_logo.png">
+    <meta name="description" content ="This is a music player website where one can play any genre of music. it has a wide variety of music collection  ">
+    <meta name="keyword" content="music player , melody , music , songs">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" >
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cantata One' rel='stylesheet'>
+    
+
+</head>
+<body>
+    <div class="bgcolor">
+        <!-- <header>
+            <div class="header-main">
+                <div id="header-logo">
+                    <img src="images/raaga_logo.png" alt="melody_logo" style ="height:120px ; width:120px;">
+                </div>
+                <div id="header-searchbar">
+                        <form action="">
+                            <a href=""><i class="fas fa-search" id="search-icon" alt="search-icon" style= color:white;" ></i></a>
+                            <input class="form-box" type="text" name="search"placeholder="&nbsp &nbsp search...">
+                            <a href=""><i class="fas fa-microphone"id="google-mic" alt="microphone" style= color:white;" ></i> </a>       
+                        </form>
+
+                </div>
+                <div id="header-bell-icon">
+                    <a><i class="fas  fa-bell fa-2x"></i></a>
+
+                </div>
+                <div id ="login-details">
+                    <button class="dropbtn" style="border:none;background-color:white;"><img src="images/demo-image.png "style=" height:50px ; width:50px; border-radius:50%; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 
+                        0 0 0 1px rgba(0,0,0,0.08);;" ></button>
+                    <div class="dropdown-content">
+                         <a href="#">Link 1</a> -->
+                       <!-- <a href="#">Link 2</a>
+                        <a href="#">Link 3</a> -->
+                    <!-- </div>
+
+                </div>
+               
+            </div>
+        </header> --> 
+       
+        <div class="sidebar ">
+                <a href="#"><img src="images/raaga_logo.png" alt="melody_logo" style ="height:120px ; width:120px;"></a>
+                <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+                <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+                <a href="#"><i class="fas fa-address-card"></i> Contact</a> 
+                <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+            </div>
+        
+        <form action="">
+                <!-- <a href=""><i class="fas fa-search" id="search-icon" alt="search-icon" style= color:white;" ></i></a> -->
+                <input class="form-box" type="text" name="search"placeholder="&nbsp &nbsp search...">
+                <!-- <a href=""><i class="fas fa-microphone"id="google-mic" alt="microphone" style= color:white;" ></i> </a>        -->
+        </form>
+
+        <!-- <div id ="login-details">
+            <button class="dropbtn" style="border:none;background-color:white;"><img src="images/demo-image.png "style=" height:50px ; width:50px; border-radius:50%; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 
+                0 0 0 1px rgba(0,0,0,0.08);;" ></button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+
+        </div> -->
+
+        <main>
+            <section id="favourites">
+                    <h1 class="section_header">              
+                        <span style="padding: 0px 0px 20px;">Favourites</span>
+                    </h1>
+
+
+                    <div class="display">
+
+
+                        <div class="favourite-name">                        
+                                <span ><a href="cokestudio.html"><img id ="img1" src="images/hindi/coke_studio.png" ></a></span>
+                                
+                        </div>
+
+                        <div class="favourite-name">                        
+                            <span>  <a href="localtrain.html"><img id ="img1" src="images/hindi/local_train.png" ></a></span>
+                        </div>
+
+                        <div class="favourite-name">                        
+                            <span>  <img id ="img1" src="images/hindi/coke_studio.png" ></span>
+                        </div>
+
+                        <div class="favourite-name">                        
+                                <span>  <a href="localtrain.html"><img id ="img1" src="images/hindi/local_train.png" ></a></span>
+                        </div>
+
+                        <div class="favourite-name">                        
+                                <span>  <a href="localtrain.html"><img id ="img1" src="images/hindi/local_train.png" ></a></span>
+                        </div>
+
+
+                    </div>
+ 
+            </section>
+
+            <section id="Latest-Release">
+                    <h1 class="section_header">              
+                        <span>Latest Release</span>
+                    </h1>
+
+                    <div class="display">
+                        
+
+                        <div class="latest_release-name">
+                            <div class='pic'>
+                                <a><img id ="img1" src="images/artists/Madonna.png" ></a>                              
+                            </div>
+                            <div class="other">    
+                                <div style="height:100%;width:100px;display:inline-block;text-align:center;padding:12% 0 0 2%;" > 
+                                     <p style="color:white;">Madona</p>
+                                    <p style="color:white;">Aug 11, 2020</p> 
+                                </div>
+                                <div style="height:100%;width:70px;display:block;float:right;" > 
+                                    <span class="dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">...</button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <a>more info</a>
+                                            <a>about</a>    
+                                        </div>
+                                    </span><br>
+                                    <span style="color:white;padding: 0px 0px 0px 8px;">4.44</span>
+                                </div>
+                            </div>                                                      
+                        </div>
+
+                        <div class="latest_release-name">
+                                <div class='pic'>
+                                    <a><img id ="img1" src="images/artists/Madonna.png" ></a>                              
+                                </div>
+                                <div class="other">    
+                                    <div style="height:100%;width:100px;display:inline-block;text-align:center;padding:12% 0 0 2%;" > 
+                                         <p style="color:white;">Madona</p>
+                                        <p style="color:white;">Aug 11, 2020</p> 
+                                    </div>
+                                    <div style="height:100%;width:70px;display:block;float:right;" > 
+                                        <span class="dropdown">
+                                            <button onclick="myFunction()" class="dropbtn">...</button>
+                                            <div id="myDropdown" class="dropdown-content">
+                                                <a>more info</a>
+                                                <a>about</a>    
+                                            </div>
+                                        </span><br>
+                                        <span style="color:white;padding: 0px 0px 0px 8px;">4.44</span>
+                                    </div>
+                                </div>                                                      
+                            </div>
+
+                            <div class="latest_release-name">
+                                    <div class='pic'>
+                                        <a><img id ="img1" src="images/artists/Madonna.png" ></a>                              
+                                    </div>
+                                    <div class="other">    
+                                        <div style="height:100%;width:100px;display:inline-block;text-align:center;padding:12% 0 0 2%;" > 
+                                             <p style="color:white;">Madona</p>
+                                            <p style="color:white;">Aug 11, 2020</p> 
+                                        </div>
+                                        <div style="height:100%;width:70px;display:block;float:right;" > 
+                                            <span class="dropdown">
+                                                <button onclick="myFunction()" class="dropbtn">...</button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                    <a>more info</a>
+                                                    <a>about</a>    
+                                                </div>
+                                            </span><br>
+                                            <span style="color:white;padding: 0px 0px 0px 8px;">4.44</span>
+                                        </div>
+                                    </div>                                                      
+                                </div>
+
+                                <div class="latest_release-name">
+                                        <div class='pic'>
+                                            <a><img id ="img1" src="images/artists/Madonna.png" ></a>                              
+                                        </div>
+                                        <div class="other">    
+                                            <div style="height:100%;width:100px;display:inline-block;text-align:center;padding:12% 0 0 2%;" > 
+                                                 <p style="color:white;">Madona</p>
+                                                <p style="color:white;">Aug 11, 2020</p> 
+                                            </div>
+                                            <div style="height:100%;width:70px;display:block;float:right;" > 
+                                                <span class="dropdown">
+                                                    <button onclick="myFunction()" class="dropbtn">...</button>
+                                                    <div id="myDropdown" class="dropdown-content">
+                                                        <a>more info</a>
+                                                        <a>about</a>    
+                                                    </div>
+                                                </span><br>
+                                                <span style="color:white;padding: 0px 0px 0px 8px;">4.44</span>
+                                            </div>
+                                        </div>                                                      
+                                    </div>
+
+                    </div>        
+
+            </section>
+
+            <section id="popular-artist">
+                    <h1 class="section_header">              
+                        <span>Popular Artist</span>
+                    </h1>
+
+                    <div class="display">
+                        <div class="popular-artist-name">                        
+                                <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                                <span style="padding-left:45px;color:white;">Lady gaga</span>
+                        </div>
+
+                        <div class="popular-artist-name">                        
+                                <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                                <span style="padding-left:45px;color:white;">Lady gaga</span>
+                        </div>
+
+                        <div class="popular-artist-name">                        
+                                <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                                <span style="padding-left:45px;color:white;">Lady gaga</span>
+                        </div>
+
+                        <div class="popular-artist-name">                        
+                                <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                                <span style="padding-left:45px;color:white;">Lady gaga</span>
+                        </div>
+
+                        <div class="popular-artist-name">                        
+                                <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                                <span style="padding-left:45px;color:white;">Lady gaga</span>
+                        </div>
+
+                        <div class="popular-artist-name">                        
+                                <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                                <span style="padding-left:45px;color:white;">Lady gaga</span>
+                        </div>
+
+                        <div class="popular-artist-name">                        
+                                <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                                <span style="padding-left:45px;color:white;">Lady gaga</span>
+                        </div>
+
+                        
+
+                        
+
+                    </div>
+                    
+            </section>
+
+
+
+            <section id="genre">
+                    <h1 class="section_header">              
+                        <span>Genre</span>
+                    </h1>
+
+                    <div class="display">
+                        <div class="genre-name">                        
+                                <span><img id ="img1" src="images/genre/road_trip2.png" ></span>
+                                <div class="overlay">
+                                    <div class="text2">Road Trip</div>
+                                </div>                             
+                        </div>
+
+                        <div class="genre-name">                        
+                                <span><img id ="img1" src="images/genre/road_trip2.png" ></span>
+                                <div class="overlay">
+                                    <div class="text2">Road Trip</div>
+                                </div>                             
+                        </div>
+
+                        <div class="genre-name">                        
+                                <span><img id ="img1" src="images/genre/road_trip2.png" ></span>
+                                <div class="overlay">
+                                    <div class="text2">Road Trip</div>
+                                </div>                             
+                        </div>
+
+                        <div class="genre-name">                        
+                                <span><img id ="img1" src="images/genre/road_trip2.png" ></span>
+                                <div class="overlay">
+                                    <div class="text2">Road Trip</div>
+                                </div>                             
+                        </div>
+
+                    </div>
+                   
+            </section>
+
+            <section id="mood">
+                    <h1 class="section_header">              
+                        <span>Mood</span>
+                    </h1>
+
+                    <div class="display">
+                        <div class="mood_name">                        
+                                <span><img id ="img1" src="images/mood/pop.png" ></span>
+                                <div class="overlay">
+                                    <div class="text">Pop</div>
+                                </div>
+                                
+                        </div>
+
+                        <div class="mood_name">                        
+                                <span><img id ="img1" src="images/mood/pop.png" ></span>
+                                <div class="overlay">
+                                    <div class="text">Pop</div>
+                                </div>
+                                
+                        </div>
+
+                        <div class="mood_name">                        
+                                <span><img id ="img1" src="images/mood/pop.png" ></span>
+                                <div class="overlay">
+                                    <div class="text">Pop</div>
+                                </div>
+                                
+                        </div>
+
+                        <div class="mood_name">                        
+                                <span><img id ="img1" src="images/mood/pop.png" ></span>
+                                <div class="overlay">
+                                    <div class="text">Pop</div>
+                                </div>
+                                
+                        </div>
+
+                        <div class="mood_name">                        
+                                <span><img id ="img1" src="images/mood/pop.png" ></span>
+                                <div class="overlay">
+                                    <div class="text">Pop</div>
+                                </div>
+                                
+                        </div>
+
+                        <div class="mood_name">                        
+                                <span><img id ="img1" src="images/mood/pop.png" ></span>
+                                <div class="overlay">
+                                    <div class="text">Pop</div>
+                                </div>
+                                
+                        </div>
+
+                        <div class="mood_name">                        
+                                <span><img id ="img1" src="images/mood/pop.png" ></span>
+                                <div class="overlay">
+                                    <div class="text">Pop</div>
+                                </div>
+                                
+                        </div>
+
+                    </div>
+                    
+            </section>
+
+            <section id="English_hits">
+                    <h1 class="section_header">              
+                        <span>English Hits</span>
+                    </h1>
+
+                    <div class="display">
+                        <div class="english-hits-name">                        
+                                <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                                <span style="display:inline-block;width:150px ;text-align: center;color:white;">Onisum</span><br>
+                                <span style="display:inline-block; width:150px;text-align:center;color:white;">2nd oct 2020</span>
+                        </div>
+
+                        <div class="english-hits-name">                        
+                            <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                            <span style="display:inline-block;width:150px ;text-align: center;color:white;">Onisum</span><br>
+                            <span style="display:inline-block; width:150px;text-align:center;color:white;">2nd oct 2020</span>
+                        </div>
+
+                         <div class="english-hits-name">                        
+                            <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                            <span style="display:inline-block;width:150px ;text-align: center;color:white;">Onisum</span><br>
+                            <span style="display:inline-block; width:150px;text-align:center;color:white;">2nd oct 2020</span>
+                         </div>
+
+                        <div class="english-hits-name">                        
+                            <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                            <span style="display:inline-block;width:150px ;text-align: center;color:white;">Onisum</span><br>
+                            <span style="display:inline-block; width:150px;text-align:center;color:white;">2nd oct 2020</span>
+                        </div>
+                        <div class="english-hits-name">                        
+                            <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                            <span style="display:inline-block;width:150px ;text-align: center;color:white;">Onisum</span><br>
+                            <span style="display:inline-block; width:150px;text-align:center;color:white;">2nd oct 2020</span>
+                         </div>
+
+                         <div class="english-hits-name">                        
+                                <span><img id ="img1" src="images/artists/Lady-Gaga-Fame-.png" ></span><br>
+                                <span style="display:inline-block;width:150px ;text-align: center;color:white;">Onisum</span><br>
+                                <span style="display:inline-block; width:150px;text-align:center;color:white;">2nd oct 2020</span>
+                        </div>
+
+                       
+
+
+
+                    </div>
+                    
+            </section>
+
+            <section id="hindi_hits">
+                    <h1 class="section_header">              
+                        <span>Hindi Hits </span>
+                    </h1>
+
+                    <div class="display">
+                        <div class="hindi-hits-name">                        
+                            <span>  <a href="localtrain.html"><img id ="img1" src="images/hindi/local_train.png" ></a></span><br>
+                            <span style="display:inline-block;width:150px ;text-align: center;color:white;">Local train</span><br>
+                            <span style="display:inline-block; width:150px;text-align:center;color:white;">2nd oct 2020</span>
+                        </div>
+
+                        <div class="hindi-hits-name">                        
+                                <span>  <a href="localtrain.html"><img id ="img1" src="images/hindi/local_train.png" ></a></span><br>
+                                <span style="display:inline-block;width:150px ;text-align: center;color:white;">Local train</span><br>
+                                <span style="display:inline-block; width:150px;text-align:center;color:white;">2nd oct 2020</span>
+                        </div>
+
+                        <div class="hindi-hits-name">                        
+                                <span>  <a href="localtrain.html"><img id ="img1" src="images/hindi/local_train.png" ></a></span><br>
+                                <span style="display:inline-block;width:150px ;text-align: center;color:white;">Local train</span><br>
+                                <span style="display:inline-block; width:150px;text-align:center;color:white;">2nd oct 2020</span>
+                        </div>  
+                        
+                        <div class="hindi-hits-name">                        
+                                <span>  <a href="localtrain.html"><img id ="img1" src="images/hindi/local_train.png" ></a></span><br>
+                                <span style="display:inline-block;width:150px ;text-align: center;color:white;">Local train</span><br>
+                                <span style="display:inline-block; width:150px;text-align:center;color:white;">2nd oct 2020</span>
+                        </div>
+
+                        <div class="hindi-hits-name">                        
+                                <span>  <a href="localtrain.html"><img id ="img1" src="images/hindi/local_train.png" ></a></span><br>
+                                <span style="display:inline-block;width:150px ;text-align: center;color:white;">Local train</span><br>
+                                <span style="display:inline-block; width:150px;text-align:center;color:white;">2nd oct 2020</span>
+                        </div>
+
+                        <div class="hindi-hits-name">                        
+                                <span>  <a href="localtrain.html"><img id ="img1" src="images/hindi/local_train.png" ></a></span><br>
+                                <span style="display:inline-block;width:150px ;text-align: center;color:white;">Local train</span><br>
+                                <span style="display:inline-block; width:150px;text-align:center;color:white;">2nd oct 2020</span>
+                        </div>
+
+                    </div>
+                    
+            </section>
+
+
+        </main>
+        
+
+
+    </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                }
+            }
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
