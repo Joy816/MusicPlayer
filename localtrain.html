@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--  -->
+    <title>Raaga</title>
+    <link rel="icon" type="image/png" href="images/raaga_logo.png">
+    <meta name="description" content ="This is a music player website where one can play any genre of music. it has a wide variety of music collection  ">
+    <meta name="keyword" content="music player , melody , music , songs">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" >
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cantata One' rel='stylesheet'>
+    <style>
+        main{
+            width:85%;
+            margin-left: 14%;
+        }
+
+@media screen and (max-width:1200px){
+    main{
+        margin-left:20%;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    main{
+        margin-left:25%;
+    }
+
+}
+
+@media screen and (max-width:900px){
+    main{
+        margin-left:30%;
+    }
+
+}
+
+@media screen and (max-width:700px){
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: absolute;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+
+      main{
+        padding-top:30%;
+        width:100%;
+        margin-left:5%;
+    }
+  
+      
+    }
+    
+
+
+@media screen and (max-width:500px){
+    .sidebar a {
+        text-align: center;
+        float: none;
+      }
+
+      main{
+        padding-top:80%;
+        width:100%;
+        margin-left:5%;
+    }
+     
+    
+}
+    
+    
+    
+    </style>
+    
+
+</head>
+<body>
+    <div class="sidebar ">
+        <a href="#"><img src="images/raaga_logo.png" alt="melody_logo" style ="height:120px ; width:120px;"></a>
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+        <a href="#"><i class="fas fa-address-card"></i> Contact</a> 
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+    </div>
+
+    <main>
+
+        <div class="display">
+
+            <!-- <div class="card">
+                <div class="image">
+                    <a><img  src="images/hindi/local_train.png" > </a> 
+
+                </div>
+                <div class="content">
+                    <p>The Local Train </p> 
+
+                </div>
+
+            </div> -->
+
+            <div class="card">
+                <div class='image'>
+                    <a><img  src="images/hindi/local_train.png" > </a>                              
+                </div>
+                <div class="story">  
+                    <h1 style="color:white;">The Local Train</h1>  
+                    
+                    <p style="color:white; font-size:1.3em;">Indian Band</p>
+                    <p style="color:white; ">The Local Train is an Indian Hindi rock band from Delhi. Since its inception in Chandigarh in 2008, the band has gone on to achieve massive commercial success and has become a staple in cultural and music festivals across the country. The Local Train is widely known for its emphatic lyrics - which are a blend of Urdu and Hindi[1] - and their signature lies in a raw, honest sound which resonates with the youth. </p> 
+                    <p><button class="playbtn" >Play All</button></p>
+                </div>                                                      
+            </div>
+
+            <div class="playlist" >
+                    <div style="height:100%;display:block;float:left;padding:20px 5px 0px 10px;" > 
+                        <span style="color:white;">01</span>   
+                    </div>
+
+                    <div class='playlist_pic'>
+                            <a><img id ="img1" src="images/hindi/local_train2.png" ></a>                              
+                    </div>
+                    <div class="playlist_other">
+                    <div style="height:100%;display:inline-block;" > 
+                            <span style="color:white;">Vaaqif</span><br>
+                           <span style="color:white;">The local train </span> 
+                       </div>
+                       <span style="color:white;margin:300px;">3.53</span>
+                       <div style="height:100%;width:70px;display:block;float:right;" > 
+                          
+                           <span class="dropdown">
+                               <button onclick="myFunction()" class="dropbtn" style=" padding: 0px 0px 1px 10px;background-color:rgb(52, 52, 65);">...</button>
+                               <div id="myDropdown" class="dropdown-content">
+                                   <a>more info</a>
+                                   <a>about</a>    
+                               </div>
+                           </span>
+                           
+                       </div>
+                    </div>           
+            </div>
+
+            <div class="playlist">
+                    <div style="height:100%;display:block;float:left;padding:20px 5px 0px 10px;" > 
+                        <span style="color:white;">02</span>   
+                    </div>
+
+                    <div class='playlist_pic'>
+                            <a><img id ="img1" src="images/hindi/local_train.png" ></a>                              
+                    </div>
+                    <div class="playlist_other">
+                    <div style="height:100%;display:inline-block;" > 
+                            <span style="color:white;">Choo lo</span><br>
+                           <span style="color:white;">The local train </span> 
+                       </div>
+                       <span style="color:white;margin:300px;">3.53</span>
+                       <div style="height:100%;width:70px;display:block;float:right;" > 
+                          
+                           <span class="dropdown">
+                               <button onclick="myFunction()" class="dropbtn" style=" padding: 0px 0px 1px 10px;background-color:rgb(52, 52, 65);">...</button>
+                               <div id="myDropdown" class="dropdown-content">
+                                   <a>more info</a>
+                                   <a>about</a>    
+                               </div>
+                           </span>
+                           
+                       </div>
+                    </div>           
+            </div>
+
+            <div class="playlist">
+                    <div style="height:100%;display:block;float:left;padding:20px 5px 0px 10px;" > 
+                        <span style="color:white;">03</span>   
+                    </div>
+
+                    <div class='playlist_pic'>
+                            <a><img id ="img1" src="images/hindi/local_train_khudi.png" ></a>                              
+                    </div>
+                    <div class="playlist_other">
+                    <div style="height:100%;display:inline-block;" > 
+                            <span style="color:white;">Khudi-Single</span><br>
+                           <span style="color:white;">The local train </span> 
+                       </div>
+                       <span style="color:white;margin:300px;">3.53</span>
+                       <div style="height:100%;width:70px;display:block;float:right;" > 
+                          
+                           <span class="dropdown">
+                               <button onclick="myFunction()" class="dropbtn" style=" padding: 0px 0px 1px 10px;background-color:rgb(52, 52, 65);">...</button>
+                               <div id="myDropdown" class="dropdown-content">
+                                   <a>more info</a>
+                                   <a>about</a>    
+                               </div>
+                           </span>
+                           
+                       </div>
+                    </div>           
+            </div>
+
+            <div class="playlist">
+                    <div style="height:100%;display:block;float:left;padding:20px 5px 0px 10px;" > 
+                        <span style="color:white;">01</span>   
+                    </div>
+
+                    <div class='playlist_pic'>
+                            <a><img id ="img1" src="images/hindi/local_train2.png" ></a>                              
+                    </div>
+                    <div class="playlist_other">
+                    <div style="height:100%;display:inline-block;" > 
+                            <span style="color:white;">Vaaqif</span><br>
+                           <span style="color:white;">The local train </span> 
+                       </div>
+                       <span style="color:white;margin:300px;">3.53</span>
+                       <div style="height:100%;width:70px;display:block;float:right;" > 
+                          
+                           <span class="dropdown">
+                               <button onclick="myFunction()" class="dropbtn" style=" padding: 0px 0px 1px 10px;background-color:rgb(52, 52, 65);">...</button>
+                               <div id="myDropdown" class="dropdown-content">
+                                   <a>more info</a>
+                                   <a>about</a>    
+                               </div>
+                           </span>
+                           
+                       </div>
+                    </div>           
+            </div>
+
+            <div class="playlist">
+                    <div style="height:100%;display:block;float:left;padding:20px 5px 0px 10px;" > 
+                        <span style="color:white;">02</span>   
+                    </div>
+
+                    <div class='playlist_pic'>
+                            <a><img id ="img1" src="images/hindi/local_train.png" ></a>                              
+                    </div>
+                    <div class="playlist_other">
+                    <div style="height:100%;display:inline-block;" > 
+                            <span style="color:white;">Choo lo</span><br>
+                           <span style="color:white;">The local train </span> 
+                       </div>
+                       <span style="color:white;margin:300px;">3.53</span>
+                       <div style="height:100%;width:70px;display:block;float:right;" > 
+                          
+                           <span class="dropdown">
+                               <button onclick="myFunction()" class="dropbtn" style=" padding: 0px 0px 1px 10px;background-color:rgb(52, 52, 65);">...</button>
+                               <div id="myDropdown" class="dropdown-content">
+                                   <a>more info</a>
+                                   <a>about</a>    
+                               </div>
+                           </span>
+                           
+                       </div>
+                    </div>           
+            </div>
+
+            <div class="playlist">
+                    <div style="height:100%;display:block;float:left;padding:20px 5px 0px 10px;" > 
+                        <span style="color:white;">03</span>   
+                    </div>
+
+                    <div class='playlist_pic'>
+                            <a><img id ="img1" src="images/hindi/local_train_khudi.png" ></a>                              
+                    </div>
+                    <div class="playlist_other">
+                    <div style="height:100%;display:inline-block;" > 
+                            <span style="color:white;">Khudi-Single</span><br>
+                           <span style="color:white;">The local train </span> 
+                       </div>
+                       <span style="color:white;margin:300px;">3.53</span>
+                       <div style="height:100%;width:70px;display:block;float:right;" > 
+                          
+                           <span class="dropdown">
+                               <button onclick="myFunction()" class="dropbtn" style=" padding: 0px 0px 1px 10px;background-color:rgb(52, 52, 65);">...</button>
+                               <div id="myDropdown" class="dropdown-content">
+                                   <a>more info</a>
+                                   <a>about</a>    
+                               </div>
+                           </span>
+                           
+                       </div>
+                    </div>           
+            </div>
+
+            <div class="playlist">
+                    <div style="height:100%;display:block;float:left;padding:20px 5px 0px 10px;" > 
+                        <span style="color:white;">01</span>   
+                    </div>
+
+                    <div class='playlist_pic'>
+                            <a><img id ="img1" src="images/hindi/local_train2.png" ></a>                              
+                    </div>
+                    <div class="playlist_other">
+                    <div style="height:100%;display:inline-block;" > 
+                            <span style="color:white;">Vaaqif</span><br>
+                           <span style="color:white;">The local train </span> 
+                       </div>
+                       <span style="color:white;margin:300px;">3.53</span>
+                       <div style="height:100%;width:70px;display:block;float:right;" > 
+                          
+                           <span class="dropdown">
+                               <button onclick="myFunction()" class="dropbtn" style=" padding: 0px 0px 1px 10px;background-color:rgb(52, 52, 65);">...</button>
+                               <div id="myDropdown" class="dropdown-content">
+                                   <a>more info</a>
+                                   <a>about</a>    
+                               </div>
+                           </span>
+                           
+                       </div>
+                    </div>           
+            </div>
+
+            <div class="playlist">
+                    <div style="height:100%;display:block;float:left;padding:20px 5px 0px 10px;" > 
+                        <span style="color:white;">02</span>   
+                    </div>
+
+                    <div class='playlist_pic'>
+                            <a><img id ="img1" src="images/hindi/local_train.png" ></a>                              
+                    </div>
+                    <div class="playlist_other">
+                    <div style="height:100%;display:inline-block;" > 
+                            <span style="color:white;">Choo lo</span><br>
+                           <span style="color:white;">The local train </span> 
+                       </div>
+                       <span style="color:white;margin:300px;">3.53</span>
+                       <div style="height:100%;width:70px;display:block;float:right;" > 
+                          
+                           <span class="dropdown">
+                               <button onclick="myFunction()" class="dropbtn" style=" padding: 0px 0px 1px 10px;background-color:rgb(52, 52, 65);">...</button>
+                               <div id="myDropdown" class="dropdown-content">
+                                   <a>more info</a>
+                                   <a>about</a>    
+                               </div>
+                           </span>
+                           
+                       </div>
+                    </div>           
+            </div>
+
+            <div class="playlist">
+                    <div style="height:100%;display:block;float:left;padding:20px 5px 0px 10px;" > 
+                        <span style="color:white;">03</span>   
+                    </div>
+
+                    <div class='playlist_pic'>
+                            <a><img id ="img1" src="images/hindi/local_train_khudi.png" ></a>                              
+                    </div>
+                    <div class="playlist_other">
+                    <div style="height:100%;display:inline-block;" > 
+                            <span style="color:white;">Khudi-Single</span><br>
+                           <span style="color:white;">The local train </span> 
+                       </div>
+                       <span style="color:white;margin:300px;">3.53</span>
+                       <div style="height:100%;width:70px;display:block;float:right;" > 
+                          
+                           <span class="dropdown">
+                               <button onclick="myFunction()" class="dropbtn" style=" padding: 0px 0px 1px 10px;background-color:rgb(52, 52, 65);">...</button>
+                               <div id="myDropdown" class="dropdown-content">
+                                   <a>more info</a>
+                                   <a>about</a>    
+                               </div>
+                           </span>
+                           
+                       </div>
+                    </div>           
+            </div>
+
+            <div class="playlist">
+                    <div style="height:100%;display:block;float:left;padding:20px 5px 0px 10px;" > 
+                        <span style="color:white;">01</span>   
+                    </div>
+
+                    <div class='playlist_pic'>
+                            <a><img id ="img1" src="images/hindi/local_train2.png" ></a>                              
+                    </div>
+                    <div class="playlist_other">
+                    <div style="height:100%;display:inline-block;" > 
+                            <span style="color:white;">Vaaqif</span><br>
+                           <span style="color:white;">The local train </span> 
+                       </div>
+                       <span style="color:white;margin:300px;">3.53</span>
+                       <div style="height:100%;width:70px;display:block;float:right;" > 
+                          
+                           <span class="dropdown">
+                               <button onclick="myFunction()" class="dropbtn" style=" padding: 0px 0px 1px 10px;background-color:rgb(52, 52, 65);">...</button>
+                               <div id="myDropdown" class="dropdown-content">
+                                   <a>more info</a>
+                                   <a>about</a>    
+                               </div>
+                           </span>
+                           
+                       </div>
+                    </div>           
+            </div>
+
+            <div class="playlist">
+                    <div style="height:100%;display:block;float:left;padding:20px 5px 0px 10px;" > 
+                        <span style="color:white;">02</span>   
+                    </div>
+
+                    <div class='playlist_pic'>
+                            <a><img id ="img1" src="images/hindi/local_train.png" ></a>                              
+                    </div>
+                    <div class="playlist_other">
+                    <div style="height:100%;display:inline-block;" > 
+                            <span style="color:white;">Choo lo</span><br>
+                           <span style="color:white;">The local train </span> 
+                       </div>
+                       <span style="color:white;margin:300px;">3.53</span>
+                       <div style="height:100%;width:70px;display:block;float:right;" > 
+                          
+                           <span class="dropdown">
+                               <button onclick="myFunction()" class="dropbtn" style=" padding: 0px 0px 1px 10px;background-color:rgb(52, 52, 65);">...</button>
+                               <div id="myDropdown" class="dropdown-content">
+                                   <a>more info</a>
+                                   <a>about</a>    
+                               </div>
+                           </span>
+                           
+                       </div>
+                    </div>           
+            </div>
+
+            <div class="playlist">
+                    <div style="height:100%;display:block;float:left;padding:20px 5px 0px 10px;" > 
+                        <span style="color:white;">03</span>   
+                    </div>
+
+                    <div class='playlist_pic'>
+                            <a><img id ="img1" src="images/hindi/local_train_khudi.png" ></a>                              
+                    </div>
+                    <div class="playlist_other">
+                    <div style="height:100%;display:inline-block;" > 
+                            <span style="color:white;">Khudi-Single</span><br>
+                           <span style="color:white;">The local train </span> 
+                       </div>
+                       <span style="color:white;margin:300px;">3.53</span>
+                       <div style="height:100%;width:70px;display:block;float:right;" > 
+                          
+                           <span class="dropdown">
+                               <button onclick="myFunction()" class="dropbtn" style=" padding: 0px 0px 1px 10px;background-color:rgb(52, 52, 65);">...</button>
+                               <div id="myDropdown" class="dropdown-content">
+                                   <a>more info</a>
+                                   <a>about</a>    
+                               </div>
+                           </span>
+                           
+                       </div>
+                    </div>           
+            </div>            
+        </div>
+
+
+
+
+
+
+    </main>
+    <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    }
+                }
+                }
+            }
+        </script>
+
+   
+</body>
+</html>
